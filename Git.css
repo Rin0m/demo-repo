@@ -1,0 +1,35 @@
+
+:root {
+    --color-white-shade: #f0f0f0; /* Lichtgrau */
+    --color-black: #2c3e50; /* Dunkelblau */
+    --color-white: #ffffff; /* Weiß */
+}
+
+.btns {                                                         
+    display: flex;
+    column-gap: 2rem;
+    background-color: var(--color-white-shade);
+    padding: 10px; /* Polsterung für die Schaltflächen */
+}
+
+.btns:has(.btn:hover) .btn:not(:hover) { 
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+}
+
+.btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 10px 15px; /* Polsterung für die Schaltflächen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition:
+       scale 0.25s ease-in,
+       opacity 0.25s ease-in,
+       filter 0.25s ease-in;
+}
+
+.btn:hover {
+    scale: 1.2; /* Vergrößerungseffekt bei Hover */
+}
