@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(bilder/jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="AI.css">
+</head>
+<body>
+   
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/tech1.jpg" alt="Tech 1"></div>
+            <div class="item" style="--position: 2"><img src="images/tech2.jpg" alt="Tech 2"></div>
+            <div class="item" style="--position: 3"><img src="images/tech3.jpg" alt="Tech 3"></div>
+            <div class="item" style="--position: 4"><img src="images/tech4.jpg" alt="Tech 4"></div>
+            <div class="item" style="--position: 5"><img src="images/tech5.jpg" alt="Tech 5"></div>
+            <div class="item" style="--position: 6"><img src="images/tech6.jpg" alt="Tech 6"></div>
+            <div class="item" style="--position: 7"><img src="images/tech7.jpg" alt="Tech 7"></div>
+            <div class="item" style="--position: 8"><img src="images/tech8.jpg" alt="Tech 8"></div>
+            <div class="item" style="--position: 9"><img src="images/tech9.jpg" alt="Tech 9"></div>
+            <div class="item" style="--position: 10"><img src="images/tech10.jpg" alt="Tech 10"></div>
+        </div>
+        <div class="content">
+            <h1 data-content="Rim Code">
+               Rim Code
+            </h1>
+            <div class="author">
+                <h2>
+                <p> Do everthing what makes you feel good!</p>
+            </h2>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
